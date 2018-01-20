@@ -1,4 +1,5 @@
 # SimpleReactSearchExample
 
-a very simple ReactSearchExample
+a very simple search page, for purpose of learning
+
 
