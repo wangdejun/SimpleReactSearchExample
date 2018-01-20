@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
-// import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 // import './css/Search.scss';
 import SearchByDesigner from '../components/SearchByDesigner';
 import SearchByMerchant from '../components/SearchByMerchant';
@@ -8,7 +8,7 @@ import SearchByMoment from '../components/SearchByMoment';
 import SearchByUser from '../components/SearchByUser';
 import SearchByWord from '../components/SearchByWord';
 
-class Search extends Component {
+export default class Search extends Component {
 	constructor() {
 		super();
 		this.state = {
@@ -76,4 +76,3 @@ class Search extends Component {
     }
 }
 
-export default Search;

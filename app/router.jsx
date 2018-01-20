@@ -5,6 +5,6 @@ import reactDOM from 'react-dom';
 
 import Search from './containers/Search';
 
-const browserRouter = <Search/>;
+const search = <Search/>;
 
-reactDOM.render({ browserRouter }, document.getElementById('root'));
+reactDOM.render({ search }, document.getElementById('root'));

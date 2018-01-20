@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 
-class SearchByDesigner extends Component {
+export default class SearchByDesigner extends Component {
     constructor() {
         super();
     }
@@ -27,6 +27,4 @@ class SearchByDesigner extends Component {
         );
     }
 }
-
-export default SearchByDesigner;
 
