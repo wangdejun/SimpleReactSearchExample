@@ -1,0 +1,24 @@
+{
+  "name": "simple-react-search-example",
+  "version": "1.0.0",
+  "description": "a very simple search page, for purpose of learning and excecising",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wangdejun/SimpleReactSearchExample.git"
+  },
+  "keywords": [
+    "React",
+    "Search",
+    "Simple"
+  ],
+  "author": "wangdejun",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wangdejun/SimpleReactSearchExample/issues"
+  },
+  "homepage": "https://github.com/wangdejun/SimpleReactSearchExample#readme"
+}
