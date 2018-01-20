@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/wangdejun/SimpleReactSearchExample/issues"
   },
-  "homepage": "https://github.com/wangdejun/SimpleReactSearchExample#readme"
+  "homepage": "https://github.com/wangdejun/SimpleReactSearchExample#readme",
+  "dependencies": {
+    "react": "^16.2.0"
+  }
 }
