@@ -10,7 +10,7 @@ export default class SearchByMoment extends Component {
                 <p className = "search-title">MOMENTS</p>
                 <div className = "search-by-momentstags">
 				{
-					!this.props.hashtags ? ( <div/> ) : (this.props.hashtags.map((tag,i)=>{
+					!this.props.hashtags ? '' : (this.props.hashtags.map((tag,i)=>{
 						return (
 							<div  className = "search-by-momentstag-item" key = {'search-moment' + i}>
 								{tag}

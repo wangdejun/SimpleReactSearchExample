@@ -9,7 +9,7 @@ export default class SearchByMerchant extends Component {
 			<div className ="search-by">
 				<div className = "search-by-merchants">
 				{
-					!this.props.merchants ? ( <div/> ) : (this.props.merchants.map((merchant,i)=>{
+					!this.props.merchants ? '' : (this.props.merchants.map((merchant,i)=>{
 						return (
 							<div key={i} className = "search-by-merchant-item">
 								<div className = "search-by-imgcontainer">

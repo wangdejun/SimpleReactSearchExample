@@ -10,7 +10,7 @@ export default class SearchByUser extends Component {
                 <p className = "search-title">USER</p>
                 <div className = "search-by-users">
 				{
-					!this.props.users ? ( <div/> ) : (this.props.users.map((user,i)=>{
+					!this.props.users ? '' : (this.props.users.map((user,i)=>{
 						return (
 							<div key={'search-user' + i}>
 								<div className = "search-by-imgcontainer-user">
