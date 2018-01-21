@@ -6,7 +6,7 @@ const webpack = require('webpack');
 
 module.exports = {
     entry: {
-        router: ['./app/root.jsx']
+        root: ['./app/root.jsx']
     },
     output: { path: __dirname, filename: 'public/[name].bundle.js'},
 

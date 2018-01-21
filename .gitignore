@@ -1,4 +1,4 @@
 node_modules/
 bin/
 public/
-router.bundle.js
+root.bundle.js

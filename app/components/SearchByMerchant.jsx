@@ -11,14 +11,12 @@ export default class SearchByMerchant extends Component {
 				{
 					!this.props.merchants ? ( <div>{' '}</div> ) : (this.props.merchants.map((merchant,i)=>{
 						return (
-						<div>
 							<div key={i} className = "search-by-merchant-item">
 								<div className = "search-by-imgcontainer">
 									<img src={merchant.logo} />
 								</div>
 								<div className="search-by-img-intro">{merchant.locname}</div>
 							</div>
-						</div>
 						);
 					}))
 				}

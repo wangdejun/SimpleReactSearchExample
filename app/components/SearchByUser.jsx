@@ -12,7 +12,7 @@ export default class SearchByUser extends Component {
 				{
 					!this.props.users ? ( <div>{' '}</div> ) : (this.props.users.map((user,i)=>{
 						return (
-							<div>
+							<div key={'search-user' + i}>
 								<div className = "search-by-imgcontainer-user">
 									<p className="icon-container">
 									<img className="icon" src={user.icon + 's'}/>

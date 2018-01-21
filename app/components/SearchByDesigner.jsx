@@ -11,7 +11,7 @@ export default class SearchByDesigner extends Component {
 				{
 					!this.props.designers ? ( <div>{' '}</div> ) : (this.props.designers.map((designer,i)=>{
 						return (
-							<div>
+							<div key={'search-user' + i}>
 								<div className = "search-by-imgcontainer">
 									<img src={designer.logo}/>
 								</div>
