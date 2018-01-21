@@ -1,4 +1,4 @@
-### 一个简易Search Page
+### 一个简易Search Page，可以搜索M平台上的用户，品牌，电商，关键词，用于练习和试验新前端技术
 
 * clone the project
 ```
