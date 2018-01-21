@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import { render } from 'react-dom';
-import { Link } from 'react-router-dom';
-// import './css/Search.scss';
+import '../style/Search.scss';
 import SearchByDesigner from '../components/SearchByDesigner';
 import SearchByMerchant from '../components/SearchByMerchant';
 import SearchByMoment from '../components/SearchByMoment';
@@ -9,6 +7,7 @@ import SearchByUser from '../components/SearchByUser';
 import SearchByWord from '../components/SearchByWord';
 
 export default class Search extends Component {
+
 	constructor() {
 		super();
 		this.state = {
@@ -20,6 +19,7 @@ export default class Search extends Component {
 			value: ''
 		};
 		this.handleChange = this.handleChange.bind(this);
+		console.log('AAA')
 	}
 
 	fetchInputValue(inputValue) {
@@ -33,6 +33,7 @@ export default class Search extends Component {
 				hashtags: responseJson.rhints.hashtags,
 				words: responseJson.rhints.words
 			});
+			console.log(this.state.users)
 		})
 		.catch((error)=>{ console.error(error);});
 	}
@@ -52,18 +53,17 @@ export default class Search extends Component {
 
     render() {
         return (
-           <div className = "search">
+		   	<div className = "search">
 				<div className = "search-header-input">
-					<input
-						type="search"
-						value={this.state.value}
-						onChange={ e => this.handleChange(e)}
-						onSubmit={ e => this.handleChange(e)}
-						ref="searchValue"
-						placeholder="请输入关键词，话题，URL进行搜索"
-					/>
-
-				</div>
+			   	<input
+				   	type="search"
+				   	value={this.state.value}
+				   	onChange={ (e) => this.handleChange(e)}
+				   	onSubmit={ (e) => this.handleChange(e)}
+				   	ref="searchValue"
+				   	placeholder="请输入关键词，话题，URL进行搜索"
+			   	/>
+			</div>
 				<div className = "search-result-container">
 					<SearchByWord words = {this.state.words} />
 					<SearchByDesigner designers={this.state.designers}/>
@@ -71,7 +71,7 @@ export default class Search extends Component {
 					<SearchByMoment hashtags = {this.state.hashtags}/>
 					<SearchByMerchant merchants = {this.state.merchants}/>
 				</div>
-           </div>
+           	</div>
         );
     }
 }

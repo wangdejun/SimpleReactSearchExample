@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {render} from 'react-dom';
-import { Link } from 'react-router-dom';
 
 export default class SearchByMerchant extends Component{
     constructor() {
@@ -13,14 +12,14 @@ export default class SearchByMerchant extends Component{
 				{
 					!this.props.merchants ? ( <div>{' '}</div> ) : (this.props.merchants.map((merchant,i)=>{
 						return (
-						<Link to={`/product/store/${merchant.name}`} key={'search-merchant' + i} className = "search-by-merchant-item">
+						<div>
 							<div key={i} className = "search-by-merchant-item">
 								<div className = "search-by-imgcontainer">
 									<img src={merchant.logo} />
 								</div>
 								<div className="search-by-img-intro">{merchant.locname}</div>
 							</div>
-						</Link>
+						</div>
 						);
 					}))
 				}

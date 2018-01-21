@@ -1,0 +1,186 @@
+// @import "base.scss";
+
+.search-header-input{
+    padding: 0px;
+    box-sizing: border-box;
+    width: auto;
+    height: 2.2rem;
+    margin: 1rem auto;
+    background: #fff;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #aaa;
+	border-bottom: 1px solid #aaa;
+	margin:1.1rem;
+}
+
+.search-header-input input{
+	margin-top:2rem;
+	width:100%;
+	background: #fff;
+	font-weight:lighter;
+	font-size: 1rem;
+	margin: 0px;
+    border: none;
+    padding: 0px;
+    display: block;
+	height:100%;
+}
+
+.search-header-input input::-webkit-input-placeholder,
+.search-header-input input::-moz-placeholder,
+.search-header-input input:-ms-input-placeholder,
+.search-header-input input:-moz-placeholder{
+	color:#eee;
+}
+
+//整个search样式
+.search{
+	margin:0px 0px 12rem 0px;
+	font-size: 1rem;
+	font-weight:normal;
+	line-height: 1.4;
+	color:#000;
+}
+
+//定义搜索页全局样式
+.search-by{
+	width:100%;
+	box-sizing:border-box;
+	font-size: 1rem;
+	line-height:1.3;
+	margin-bottom:0.5rem;
+}
+//搜索页分区样式
+.search-by-words,
+.search-by-momentstags{
+	display:flex;
+	flex-wrap:wrap;
+}
+.search-by-word-item,
+.search-by-momentstag-item{
+	border: 0.1rem solid #aaa;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0.15rem 1rem;
+    margin: 0.5rem;
+    background: #fff;
+    font-size: 1rem;
+    border-radius: 1rem;
+    line-height: 1.5;
+}
+
+.search-by-users,
+.search-by-designers,
+.search-by-merchants
+{
+	width:100%;
+	// display:flex;
+	box-sizing:border-box;
+	padding-bottom:0.5rem;
+	// border:1px solid #eee;
+}
+
+.search-by-user-item{
+	display:block;
+	width:100%;
+}
+
+.search-by-user-item,
+.search-by-designer-item,
+.search-by-merchant-item{
+	display: flex;
+    justify-content: flex-start;
+    align-items: center;
+	margin:0.45rem 0px;
+}
+
+// //图片容器样式
+.search-by-imgcontainer{
+	width:8rem;
+	height:3.5rem;
+	padding:0.3rem;
+	margin-right:1.2rem;
+	display:flex;
+	background:#fff;
+	justify-content:center;
+	align-items:center;
+	border:1px solid #aaa;
+}
+
+$search-user:4rem;
+
+.search-by-imgcontainer-user{
+	width:$search-user;
+	height:$search-user;
+	border-radius:50%;
+	display:flex;
+	background:#fff;
+	justify-content:center;
+	align-items:center;
+	border:1px solid #eee;
+	margin-right:1rem;
+}
+.search-by-imgcontainer-user img{
+	width:$search-user;
+	height:$search-user;
+	border-radius:50%;
+}
+
+.search-by-user-item button{
+	background:#fff;
+	font-size:1.5rem;
+	padding:0px 1.2rem;
+}
+
+.search-by-imgcontainer img{
+	max-width:8rem;
+	max-height:3rem;
+}
+.search-by-img-intro{
+	font-size:1rem;
+	margin-left:0rem;
+}
+
+.search-result-container{
+	padding:0px 1rem;
+}
+
+
+//实现圆形头像start-
+.search-by-imgcontainer-user{
+	width:5rem;
+	height:5rem;
+	position:relative;
+	overflow:hidden;
+	border-radius: 50%;
+	box-sizing: border-box;
+    background: #fff;
+    z-index: 1;
+}
+.search-by-imgcontainer-user p{
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin:0;
+	padding:0;
+	width: 120%;
+	height:auto;
+}
+.search-by-imgcontainer-user .icon{
+	position: absolute;
+    top: 0rem;
+    left: 0rem;
+    display: block;
+    width: 100%;
+    height: auto;
+    transform: translate(-50%,-50%);
+}
+.search-by-imgcontainer-user .icon-back{
+	visibility:hidden;
+	position:static;
+}
+//实现圆形头像end-
+
