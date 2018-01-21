@@ -9,7 +9,7 @@ export default class SearchByDesigner extends Component {
             <div className ="search-by">
                 <div className = "search-by-designers">
 				{
-					!this.props.designers ? ( <div>{' '}</div> ) : (this.props.designers.map((designer,i)=>{
+					!this.props.designers ? ( <div/> ) : (this.props.designers.map((designer,i)=>{
 						return (
 							<div key={'search-user' + i}>
 								<div className = "search-by-imgcontainer">
