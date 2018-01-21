@@ -19,7 +19,6 @@ export default class Search extends Component {
 			value: ''
 		};
 		this.handleChange = this.handleChange.bind(this);
-		console.log('AAA')
 	}
 
 	fetchInputValue(inputValue) {
@@ -33,7 +32,6 @@ export default class Search extends Component {
 				hashtags: responseJson.rhints.hashtags,
 				words: responseJson.rhints.words
 			});
-			console.log(this.state.users)
 		})
 		.catch((error)=>{ console.error(error);});
 	}
@@ -53,9 +51,9 @@ export default class Search extends Component {
 
     render() {
         return (
-		   	<div className = "search">
+			<div className = "search">
 				<div className = "search-header-input">
-			   	<input
+				<input
 				   	type="search"
 				   	value={this.state.value}
 				   	onChange={ (e) => this.handleChange(e)}
@@ -71,8 +69,8 @@ export default class Search extends Component {
 					<SearchByMoment hashtags = {this.state.hashtags}/>
 					<SearchByMerchant merchants = {this.state.merchants}/>
 				</div>
-           	</div>
+			</div>
         );
-    }
+	}
 }
 
