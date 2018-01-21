@@ -1,4 +1,4 @@
-### 一个最基本和最简单的Search Page，
+### 一个简易Search Page
 
 * clone the project
 ```
