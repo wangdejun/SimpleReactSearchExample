@@ -1,5 +1,14 @@
-# SimpleReactSearchExample
+### 一个最基本和最简单的Search Page，
 
-a very simple search page, for purpose of learning
-
-
+* clone the project
+```
+git clone https://github.com/wangdejun/SimpleReactSearchExample.git
+```
+* install the dependencies
+```
+npm install
+```
+* start and test
+```
+webpack-dev-server
+```
