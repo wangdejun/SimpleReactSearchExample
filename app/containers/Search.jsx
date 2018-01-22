@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Input } from 'antd';
 import '../style/Search.scss';
 import SearchByDesigner from '../components/SearchByDesigner';
 import SearchByMerchant from '../components/SearchByMerchant';
@@ -6,8 +7,10 @@ import SearchByMoment from '../components/SearchByMoment';
 import SearchByUser from '../components/SearchByUser';
 import SearchByWord from '../components/SearchByWord';
 
-export default class Search extends Component {
 
+const AntSearch = Input.Search;
+
+export default class Search extends Component {
 	constructor() {
 		super();
 		this.state = {
@@ -18,7 +21,7 @@ export default class Search extends Component {
 			merchants: [],
 			value: ''
 		};
-		this.handleChange = this.handleChange.bind(this);
+		// this.handleChange = this.handleChange.bind(this);
 	}
 
 	fetchInputValue(inputValue) {
@@ -53,14 +56,15 @@ export default class Search extends Component {
         return (
 			<div className = "search">
 				<div className = "search-header-input">
+				<AntSearch placeholder="input search text" onSearch={value => console.log(value)} enterButton/>
 				<input
-				   	type="search"
-				   	value={this.state.value}
-				   	onChange={ (e) => this.handleChange(e)}
-				   	onSubmit={ (e) => this.handleChange(e)}
-				   	ref="searchValue"
-				   	placeholder="请输入关键词，话题，URL进行搜索"
-			   	/>
+					type="search"
+					value={this.state.value}
+					onChange={ (e) => this.handleChange(e)}
+					onSubmit={ (e) => this.handleChange(e)}
+					ref = "searchValue"
+					placeholder = "请输入关键词，话题，URL进行搜索"
+				/>
 			</div>
 				<div className = "search-result-container">
 					<SearchByWord words = {this.state.words} />
